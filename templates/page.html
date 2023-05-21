@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+   <body>
+      <table border="5">
+          <tr>
+             <th>firstname</th>
+             <th>lastname</th>
+             <th>email</th>
+             <th>ph</th>
+          </tr>
+          {% for row in rows %}
+             <tr>
+                 <td>{{row["firstname"]}}</td>
+                 <td>{{row["lastname"]}}</td>
+                 <td>{{row["email"]}}</td>
+                 <td>{{row["ph"]}}</td>
+             </tr>
+          {% endfor %}    
+      </table>
+   </body>
+</html>
